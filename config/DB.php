@@ -4,7 +4,7 @@
 
         public static function Conexao(){
             try{
-                self::$conexao = new PDO('mysql:host=localhost;dbname=sistema', 'root', '123456789');
+                self::$conexao = new PDO('mysql:host=localhost;dbname=cubecode_cardaplus', 'root', '123456789');
                 self::$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }catch(PDOException $e){
                 echo 'Erro:'.$e->getMessage(); 
